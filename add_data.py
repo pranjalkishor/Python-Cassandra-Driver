@@ -27,8 +27,8 @@ auth_provider = PlainTextAuthProvider(username=my_user, password=my_pwd)
 host1 = config['hosts']['host1']
 profile = ExecutionProfile(request_timeout=100)
 cluster = Cluster([host1], auth_provider=auth_provider, execution_profiles={EXEC_PROFILE_DEFAULT: profile})
-#cluster = Cluster(['10.166.64.182'], auth_provider=auth_provider, execution_profiles={EXEC_PROFILE_DEFAULT: profile})
-#cluster = Cluster(['10.166.64.182'], execution_profiles={EXEC_PROFILE_DEFAULT: profile})
+#cluster = Cluster(['IP'], auth_provider=auth_provider, execution_profiles={EXEC_PROFILE_DEFAULT: profile})
+#cluster = Cluster(['IP'], execution_profiles={EXEC_PROFILE_DEFAULT: profile})
 
 session = cluster.connect()
 
